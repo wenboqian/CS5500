@@ -1,0 +1,4 @@
+Query: based on the log content, what's the framework it used
+Standardized Query: based on the log content, what's the framework it used
+GraphQL Query: query ($filter: JSON) { _aggregation { subject(accessibility: all, filter: $filter) { consortium { histogram { key count } } log_content { framework { histogram { key count } } } _totalCount } } }
+Variables: {}

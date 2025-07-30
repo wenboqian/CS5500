@@ -1,0 +1,4 @@
+Query: I want to query all male patients
+Standardized Query: I want to query all male (sex) (sex) patients
+GraphQL Query: query ($filter: JSON) { _aggregation { subject(accessibility: all, filter: $filter) { consortium { histogram { key count } } sex { histogram { key count } } _totalCount } } }
+Variables: {'filter': {'AND': [{'IN': {'sex': ['Male']}}]}}

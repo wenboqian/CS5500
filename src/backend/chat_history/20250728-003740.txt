@@ -1,0 +1,4 @@
+Query: Get all users older than 18
+Standardized Query: Get all users older than 18
+GraphQL Query: query ($filter: JSON) { _aggregation { subject(accessibility: all, filter: $filter) { consortium { histogram { key count } } age_at_censor_status { histogram { key count } } _totalCount } } }
+Variables: {'AND': [{'GTE': {'age_at_censor_status': 18}}]}

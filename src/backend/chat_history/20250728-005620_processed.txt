@@ -1,0 +1,1 @@
+{"filter": {"AND": [{"IN": {"sex": ["Male"]}}]}}

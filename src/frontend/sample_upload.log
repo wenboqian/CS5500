@@ -1,0 +1,14 @@
+# Sample Log File for Testing Upload Feature
+
+2024-01-20 10:00:00,123 INFO [main]: org.apache.hadoop.hdfs.server.namenode.NameNode: Starting NameNode
+2024-01-20 10:00:01,456 INFO [main]: org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Loading fsimage
+2024-01-20 10:00:05,789 INFO [main]: org.apache.hive.ql.Driver: Starting query compilation
+2024-01-20 10:00:06,012 INFO [main]: org.apache.hive.ql.Driver: Invoking Spark for data processing
+2024-01-20 10:00:07,345 INFO [main]: org.apache.spark.SparkContext: Starting Spark application
+2024-01-20 10:00:08,678 INFO [main]: org.apache.spark.SparkContext: Accessing HDFS for input data
+2024-01-20 10:00:10,901 INFO [executor-1]: org.apache.spark.executor.Executor: Reading from HDFS://data/input
+2024-01-20 10:00:12,234 INFO [executor-1]: org.apache.flink.runtime.taskmanager.Task: Reading from Kafka topic
+2024-01-20 10:00:13,567 INFO [executor-2]: org.apache.flink.runtime.taskmanager.Task: Writing to HDFS://data/output
+2024-01-20 10:00:15,890 WARN [main]: org.apache.hadoop.hdfs.DFSClient: Slow datanode detected
+2024-01-20 10:00:16,123 ERROR [main]: org.apache.hive.ql.exec.Task: Task failed with exception
+2024-01-20 10:00:17,456 INFO [main]: org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Closing file handles 
